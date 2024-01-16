@@ -2,12 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 using UnityEngine.SocialPlatforms.Impl;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
-
-
 public class FlyBehaviour : MonoBehaviour
 {
    [SerializeField] private float _velocity = 1.5f;
@@ -15,12 +12,8 @@ public class FlyBehaviour : MonoBehaviour
    private Rigidbody2D _rb;
    public GameManager gameManager;
 
-    
-
-
     private void Start() {
         _rb = GetComponent<Rigidbody2D>();
-    
    }
 
    private void Update() {

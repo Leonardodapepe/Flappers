@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
-
 public class PipeincreaseScore : MonoBehaviour
 {
 private void OnTriggerEnter2D(Collider2D collision){
@@ -12,5 +11,5 @@ private void OnTriggerEnter2D(Collider2D collision){
         Score.instance.UpdateScore();
         Debug.Log ("Score Updated");
     }
-}
+  }
 }
